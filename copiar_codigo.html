@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copia Código</title>
+</head>
+<body>
+    <a href="#" onclick="copyToClipboard()">Clique aqui para copiar o código</a>
+    
+    <script>
+        function copyToClipboard() {
+            const code = "00020101021126580014br.gov.bcb.pix0136295900b7-aae7-4701-97d3-87240f95627d520400005303986540510.005802BR5925FRANCISCO HENRIQUE ARAUJO6009SAO PAULO622905251J53QEPW3RP1WH3057R39Z5ND630410F7";
+            navigator.clipboard.writeText(code)
+                .then(() => {
+                    alert("Código copiado para a área de transferência!");
+                })
+                .catch(err => {
+                    console.error("Erro ao copiar: ", err);
+                });
+        }
+    </script>
+</body>
+</html>
